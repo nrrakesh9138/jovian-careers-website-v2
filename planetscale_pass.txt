@@ -1,0 +1,4 @@
+DATABASE_HOST=aws.connect.psdb.cloud
+DATABASE_USERNAME=l7zu6ywom0jetnv24pg1
+DATABASE_PASSWORD=pscale_pw_3wevcL4CeQ683PV5JbxVVWa4zdLg2qFOUIZMf9UavP5
+DATABASE=joviancareers
