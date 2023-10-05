@@ -1,6 +1,9 @@
 from sqlalchemy import create_engine, text
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-db_connection = "mysql+pymysql://l7zu6ywom0jetnv24pg1:pscale_pw_3wevcL4CeQ683PV5JbxVVWa4zdLg2qFOUIZMf9UavP5@aws.connect.psdb.cloud/joviancareers?charset=utf8mb4"
+db_connection = os.getenv('DB_CONNECTION')
 
 engine = create_engine(db_connection, connect_args={
     "ssl":{
