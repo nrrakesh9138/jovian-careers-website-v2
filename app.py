@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     jobs = load_jobs_from_db()
-    return render_template('home.html', jobs=jobs, company="Jovian")
+    return render_template('home.html', jobs=jobs)
 
 @app.route("/job/<id>")
 def show_job(id):
